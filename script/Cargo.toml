@@ -1,0 +1,21 @@
+[package]
+version = "0.1.0"
+name = "svm-sp1-test-script"
+edition = "2021"
+default-run = "svm-sp1-test"
+
+[[bin]]
+name = "svm-sp1-test"
+path = "src/bin/main.rs"
+
+[[bin]]
+name = "vkey"
+path = "src/bin/vkey.rs"
+
+[dependencies]
+sp1-sdk = "4.1.1"
+svm-sp1-test-lib = { path = "../lib" }
+solana-sdk = { workspace = true }
+
+[build-dependencies]
+sp1-build = "4.1.1"

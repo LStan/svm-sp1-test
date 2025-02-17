@@ -1,0 +1,8 @@
+[package]
+version = "0.1.0"
+name = "svm-sp1-test-program"
+edition = "2021"
+
+[dependencies]
+sp1-zkvm = "4.0.0"
+svm-sp1-test-lib = { path = "../lib" }

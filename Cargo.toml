@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "lib",
+    "program",
+    "script",
+]
+resolver = "2"
+
+[workspace.dependencies]
+solana-svm-sp1 = { git = "https://github.com/LStan/svm-sp1", branch = "main" }
+solana-program-runtime = { git = "https://github.com/LStan/svm-sp1", branch = "main" }
+solana-sdk = { git = "https://github.com/LStan/svm-sp1", branch = "main" }
+solana-bpf-loader-program = { git = "https://github.com/LStan/svm-sp1", branch = "main" }
+solana-compute-budget = { git = "https://github.com/LStan/svm-sp1", branch = "main" }
+solana-system-program = { git = "https://github.com/LStan/svm-sp1", branch = "main" }
+
+# solana-svm = { path = "../svm" }
+# solana-program-runtime = { path = "../svm/crates/program-runtime" }
+# solana-sdk = { path = "../svm/crates/sdk/sdk" }
+# solana-bpf-loader-program = { path = "../svm/crates/programs/bpf_loader" }
+# solana-compute-budget = { path = "../svm/crates/compute-budget" }
+# solana-system-program = { path = "../svm/crates/programs/system" }
+
+[patch.crates-io]
+getrandom = { git = "https://github.com/LStan/getrandom", branch = "0.1-zkvm" }

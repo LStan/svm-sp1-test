@@ -1,0 +1,12 @@
+[package]
+name = "svm-sp1-test-lib"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-svm-sp1 = { workspace = true}
+solana-program-runtime = { workspace = true}
+solana-sdk = { workspace = true}
+solana-bpf-loader-program = { workspace = true}
+solana-compute-budget = { workspace = true}
+solana-system-program = { workspace = true}
