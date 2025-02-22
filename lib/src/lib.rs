@@ -15,7 +15,7 @@ use solana_sdk::{
     transaction::{self, SanitizedTransaction, Transaction, TransactionError},
 };
 
-use solana_svm_sp1::{
+use solana_svm::{
     account_loader::CheckedTransactionDetails,
     transaction_processing_callback::TransactionProcessingCallback,
     transaction_processing_result::ProcessedTransaction,
